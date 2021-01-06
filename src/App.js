@@ -1,9 +1,11 @@
 // rafce = reactArrowFunctionComponent
 import React from 'react'
-import Products from './components/Products/Products'
+
+import {Products, NavBar} from './components'
 const App = () => {
     return (
         <div>
+            <NavBar />
            <Products/>
         </div>
     )
