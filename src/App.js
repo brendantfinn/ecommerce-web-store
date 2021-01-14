@@ -1,7 +1,7 @@
 // rafce = reactArrowFunctionComponent
 import React, {useState, useEffect} from 'react'
 import {commerce} from './lib/commerce'
-import {Products, NavBar, Cart} from './components'
+import {Products, NavBar, Cart, Checkout} from './components'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 
 const App = () => {
@@ -64,6 +64,9 @@ const App = () => {
                             handleRemoveFromCart={handleRemoveFromCart}
                             handleEmptyCart={handleEmptyCart}
                         />
+                    </Route>
+                    <Route exact path="/checkout" >
+                        <Checkout />
                     </Route>
                 </Switch>
             </div>

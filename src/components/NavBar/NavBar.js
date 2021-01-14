@@ -10,8 +10,8 @@ import logo2 from '../../assets/logo2.png'
 import useStyles from './styles'
 
 const NavBar = ({ totalItems }) => {
-    const classes = useStyles();
     const location = useLocation();
+    const classes = useStyles();
 
     
     return (
